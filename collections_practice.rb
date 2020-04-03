@@ -28,11 +28,11 @@ end
 
 def find_a(array)
   new_array = []
-  array.each do |word|
-    if word.start_with?("a")
-      new_array << word
-    end
-  end
+  array.each {|word| word.start_with?("a") ? new_array << word}
+  #   if word.start_with?("a")
+  #     new_array << word
+  #   end
+  # end
   new_array
 
 end
