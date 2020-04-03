@@ -21,5 +21,5 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
-  array.collect {|letter| letter[2] = "$"}
+  array.gsub(/[2]/, '$')
 end
